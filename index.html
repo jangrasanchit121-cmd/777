@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jackpot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;400;500;700&family=Rye&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bg-music">
+        <source src="sweet.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="spin-sound">
+        <source src="spin.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="win-sound">
+        <source src="win.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="particles-container" id="particles"></div>
+
+    <main class="scene-1" id="slot-machine-scene">
+        <div class="glow-backdrop"></div>
+
+        <!-- Main Machine Container -->
+        <div class="machine-wrapper">
+
+            <!-- Top Marquee Sign -->
+            <div class="marquee-sign">
+                <div class="bulb-row top"></div>
+                <div class="sign-face">
+                    <h1 class="logo-text">JACKPOT</h1>
+                    <div class="sign-inner-border"></div>
+                </div>
+                <div class="bulb-row bottom"></div>
+            </div>
+
+            <!-- The Cabinet -->
+            <div class="console-body">
+
+                <!-- Reel Housing -->
+                <div class="reel-housing">
+                    <div class="glass-glare"></div>
+                    <div class="reels-container" id="reels-stage">
+                        <!-- Reel 1 -->
+                        <div class="reel-column">
+                            <div class="reel-drum" id="ring-1"></div>
+                            <div class="reel-shadow"></div>
+                        </div>
+                        <!-- Reel 2 -->
+                        <div class="reel-column">
+                            <div class="reel-drum" id="ring-2"></div>
+                            <div class="reel-shadow"></div>
+                        </div>
+                        <!-- Reel 3 -->
+                        <div class="reel-column">
+                            <div class="reel-drum" id="ring-3"></div>
+                            <div class="reel-shadow"></div>
+                        </div>
+                    </div>
+                    <!-- Payline Indicator -->
+                    <div class="payline-bar left"></div>
+                    <div class="payline-bar right"></div>
+                </div>
+
+                <!-- Bottom Console (Visual Only) -->
+                <div class="bottom-console">
+                    <div class="console-face">
+                        <!-- Decorative simplified buttons to match silhouette -->
+                        <div class="deco-btn"></div>
+                        <div class="deco-btn center"></div>
+                        <div class="deco-btn"></div>
+                    </div>
+                    <div class="coin-tray-slot"></div>
+                </div>
+
+                <!-- Lever Mechanism (Attached to side) -->
+                <div class="lever-mechanism" id="lever-control">
+                    <div class="lever-housing"></div>
+                    <div class="lever-shaft-pivot">
+                        <div class="lever-shaft"></div>
+                        <div class="lever-handle"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="instruction-label">Pull the Lever</div>
+    </main>
+
+    <div class="jackpot-overlay" id="jackpot-overlay">
+        <!-- Text injected via JS or here hidden -->
+        <h1 class="jackpot-text hidden">JACKPOT</h1>
+        <p class="subtitle hidden">777 days of us being together</p>
+        <p class="quote hidden">“The biggest jackpot I’ve ever hit.”</p>
+    </div>
+
+    <section class="scene-2 hidden" id="message-scene">
+        <div class="message-card">
+            <h2>777 Days</h2>
+            <div class="letter-content">
+                <p>777 days ago, I didn’t know how much my life was changed since you came into my life. I didn’t know
+                    that one person could quietly rewrite the way I see the world, the way I see myself, and the way I
+                    understand love. I can now see so much colours in life that i couldn't before you. But you made me
+                    do that. Slowly. Gently. Without even trying.</p>
+
+                <p>You didn’t just become someone I love. You became someone who made me better without ever asking me
+                    to be someone else. You helped me grow into a version of myself I can actually be proud of. Not
+                    perfect, not finished, but stronger, calmer, more honest, more alive. That didn’t come from
+                    motivation or pressure. It came from feeling loved in a way that made me want to rise and become a
+                    better person that you deserve. I'm still not even near that person that you deserve and that's why
+                    I'm trying to improve myself in many ways.</p>
+
+                <p>Being with you has taught me that love is not loud promises or dramatic moments. It is choosing each
+                    other on ordinary days. It is staying when things are messy. It is understanding each other even
+                    when we don’t fully understand ourselves. Somehow, with you, even the hard parts feel safer. And
+                    even im not the one to truly understand and speak the emotional language i still try to be there for
+                    you in every ways i can.</p>
+
+                <p>I feel incredibly lucky that out of all the people in this world, it was your soul that found mine.
+                    Your kindness, your warmth, your way of caring, your little ways of being you. Loving you feels
+                    natural, like breathing. It doesn’t feel forced or heavy. It feels like home. Where i can be ME
+                    MYSELF without worrying about the world and i don't give a shit what the world says. Because I'm
+                    really really hap[y that its you.</p>
+
+                <p>777 days together is not just a number. It is hundreds of mornings, nights, conversations, laughs,
+                    silences, and moments that built something real. And the truth is, this is the biggest jackpot of my
+                    life. Not because it is perfect, but because it is us.</p>
+
+                <p>I don’t just want to love you in this lifetime. I want to love this same beautiful soul in every
+                    lifetime. In every version of the universe where we exist, I hope we keep finding each other. I hope
+                    it is always you.</p>
+
+                <p>I loved it when i saw that we hit 777 days together so it almost felt like a jackpot like I've won a
+                    lottery so i felt like it has to be celebrated in some ways. Because why celebrate on some days when
+                    love is always there. So everyday with you feels like a celebration to me. And I'm also sorry that i
+                    telling you this when the day is almost over. But still i love you sooo much from all of my heart my
+                    soul my everything.</p>
+
+                <p>Thank you for being you.<br>
+                    Thank you for loving me.<br>
+                    Thank you for being these 777 days with me.</p>
+
+                <p>And I’m still here.<br>
+                    Still choosing you.<br>
+                    Every day.<br>
+                    Every night.</p>
+            </div>
+            <div class="signature">
+                Yours only,<br>
+                <span class="sig-name">SANCHIT</span><br>
+                with love❤️
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
