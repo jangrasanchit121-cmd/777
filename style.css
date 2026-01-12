@@ -544,9 +544,10 @@ body {
 }
 
 /* Mobile Optimization */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .machine-wrapper {
-        transform: scale(0.75);
+        transform: scale(0.55);
+        /* Ensure it fits comfortably on small screens */
     }
 }
 
